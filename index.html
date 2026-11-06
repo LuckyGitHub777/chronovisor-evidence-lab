@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d0f11">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <title>Chronovisor — Evidence Reconstruction</title>
+  <meta name="description" content="A fixed illustrative reference for evidence reconstruction, uncertainty and decision assurance.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="topbar">
+    <a class="wordmark" id="homeLink" href="#overview" aria-label="Chronovisor overview">CHRONOVISOR</a>
+    <div class="topbar-meta">
+      <span class="phase">CVX v0.1 · REFERENCE EXPERIENCE</span>
+      <span class="reference-flag">FIXED SAMPLE · NO LIVE DATA</span>
+    </div>
+  </header>
+  <noscript>
+    <p class="noscript" role="alert">Chronovisor's interactive reference requires JavaScript. No investigation data is loaded without it.</p>
+  </noscript>
+  <main id="main">
+    <section class="hero" id="hero" aria-labelledby="heroTitle">
+      <p class="eyebrow">INVERSE OBSERVATORY OF TIME</p>
+      <h1 id="heroTitle">Recover what reality still permits us to know.</h1>
+      <p class="lede">Evidence reconstruction and decision assurance for uncertain past and hidden states. Follow what is supported, what is inferred, and what remains unresolved.</p>
+      <form id="queryForm" class="query">
+        <label for="queryInput">FIXED REFERENCE INVESTIGATION</label>
+        <input id="queryInput" value="Pompeii — AD 79 · illustrative sample" readonly aria-readonly="true">
+        <button id="openSample" type="submit">Explore illustrative sample</button>
+      </form>
+      <p class="sample-note">One fixed reference package. Its claims and evidence-root labels demonstrate the interface; they are not a cited archaeological record. This experience does not accept arbitrary targets.</p>
+      <p class="boundary">Not a demonstrated time machine. Reconstruction remains bounded by surviving evidence.</p>
+      <p class="privacy-note">No account, uploads, saved investigations, live research connection or external data integration in this reference.</p>
+      <p id="loadStatus" class="load-status" role="status" aria-live="polite" hidden></p>
+      <p id="loadError" class="error" role="alert" tabindex="-1" hidden></p>
+    </section>
+    <section class="workspace" id="workspace" hidden aria-label="Illustrative investigation workspace">
+      <div class="workspace-toolbar">
+        <button id="backToOverview" class="quiet-button" type="button">← Overview</button>
+        <div class="workspace-state">
+          <span>FIXED ILLUSTRATIVE SAMPLE</span>
+          <span>LOCAL REFERENCE DATA</span>
+        </div>
+      </div>
+      <nav class="modes" role="tablist" aria-label="Investigation modes">
+        <button id="tab-reconstruct" role="tab" aria-selected="true" aria-controls="panel-reconstruct" data-mode="RECONSTRUCT" class="active">RECONSTRUCT</button>
+        <button id="tab-evidence" role="tab" aria-selected="false" tabindex="-1" aria-controls="panel-evidence" data-mode="EVIDENCE">EVIDENCE</button>
+        <button id="tab-timeline" role="tab" aria-selected="false" tabindex="-1" aria-controls="panel-timeline" data-mode="TIMELINE">TIMELINE</button>
+        <button id="tab-decide" role="tab" aria-selected="false" tabindex="-1" aria-controls="panel-decide" data-mode="DECIDE">DECIDE</button>
+      </nav>
+      <div class="investigation-head">
+        <div class="investigation-title">
+          <p class="eyebrow">INVESTIGATION · FIXED ILLUSTRATIVE SAMPLE</p>
+          <h1 id="investigationTitle" tabindex="-1">Pompeii — AD 79</h1>
+          <p class="sample-banner" id="sampleNotice">Illustrative evidence package — not a cited archaeological record.</p>
+        </div>
+        <div class="lens">
+          <div class="lens-heading">
+            <label for="evidenceLens">REALITY ↔ EVIDENCE LENS</label>
+            <output id="lensValue" for="evidenceLens">Balanced view</output>
+          </div>
+          <div class="lens-controls">
+            <span>Reality</span>
+            <input id="evidenceLens" type="range" min="0" max="100" value="25" aria-label="Reality to Evidence lens" aria-describedby="lensHelp">
+            <span>Evidence</span>
+          </div>
+          <p id="lensHelp">Adjusts the reconstruction display only. The evidence register retains possible and unknown claims.</p>
+        </div>
+      </div>
+      <section id="panel-reconstruct" class="mode-panel" role="tabpanel" aria-labelledby="tab-reconstruct">
+        <div class="legend" aria-label="Epistemic status legend">
+          <span class="known-key">KNOWN</span>
+          <span class="inferred-key">INFERRED</span>
+          <span class="possible-key">POSSIBLE</span>
+          <span class="unknown-key">UNKNOWN</span>
+        </div>
+        <div class="canvas">
+          <div class="scene" id="scene" aria-label="Illustrative reconstruction elements">
+            <button class="evidence-object known" data-id="wall" aria-pressed="false">Western wall · KNOWN</button>
+            <button class="evidence-object inferred" data-id="roof" aria-pressed="false">Upper roof form · INFERRED</button>
+            <button class="evidence-object possible" data-id="color" aria-pressed="false">Surface color · POSSIBLE</button>
+            <button class="evidence-object unknown" data-id="conversation" aria-pressed="false">Exact conversation · UNKNOWN</button>
+          </div>
+          <aside class="inspector" id="inspector" aria-labelledby="inspectorTitle">
+            <p class="eyebrow">SHOW ME WHY</p>
+            <h2 id="inspectorTitle" tabindex="-1">Inspect a reconstruction element</h2>
+            <p id="itemStatus" class="status">Select an element to inspect its status.</p>
+            <p id="itemWhy" class="inspector-copy">Every meaningful conclusion should expose its evidence roots, dependencies, uncertainty, alternatives and what would change it.</p>
+            <dl id="itemDetails" class="details" aria-live="polite" hidden>
+              <dt>Evidence roots · illustrative labels</dt><dd id="itemRoots"></dd>
+              <dt>Dependencies</dt><dd id="itemDependencies"></dd>
+              <dt>Contradictions</dt><dd id="itemContradictions"></dd>
+              <dt>Alternatives</dt><dd id="itemAlternatives"></dd>
+              <dt>Missing evidence</dt><dd id="itemMissing"></dd>
+              <dt>What would change the conclusion</dt><dd id="itemChange"></dd>
+            </dl>
+          </aside>
+        </div>
+        <section class="card">
+          <div class="card-heading">
+            <div>
+              <h2 class="eyebrow">COMPETING RECONSTRUCTIONS</h2>
+              <p class="meta">Qualitative comparison only. This sample contains no calibrated probabilities.</p>
+            </div>
+          </div>
+          <div id="hypotheses"></div>
+        </section>
+      </section>
+      <section id="panel-evidence" class="mode-panel" role="tabpanel" aria-labelledby="tab-evidence" hidden>
+        <div class="two-grid">
+          <section class="card">
+            <h2 class="eyebrow">CLAIM REGISTER</h2>
+            <p class="meta">These are reconstruction claims, not source documents. Evidence-root labels are illustrative and are not links to authenticated records.</p>
+            <div id="evidenceRegister"></div>
+          </section>
+          <section class="card next-evidence-card">
+            <h2 class="eyebrow">WHAT SHOULD WE KNOW NEXT?</h2>
+            <p class="meta">Candidate next evidence · illustrative, not calculated from live research.</p>
+            <p id="nextEvidence" class="next-evidence"></p>
+          </section>
+        </div>
+      </section>
+      <section id="panel-timeline" class="mode-panel" role="tabpanel" aria-labelledby="tab-timeline" hidden>
+        <section class="card">
+          <h2 class="eyebrow">TEMPORAL RECORD</h2>
+          <p class="meta">A timeline requires dated or bounded events with traceable temporal evidence.</p>
+          <div id="timeline"></div>
+        </section>
+      </section>
+      <section id="panel-decide" class="mode-panel" role="tabpanel" aria-labelledby="tab-decide" hidden>
+        <div class="two-grid">
+          <section class="card">
+            <h2 class="eyebrow">DECISION BASIS</h2>
+            <p id="decisionBasis" class="decision-basis">Human authority remains explicit.</p>
+            <p id="decisionNotice" class="decision-notice">Illustrative decision state only. No action is executed or authorized by this interface.</p>
+            <div id="decisionActions"></div>
+          </section>
+          <section class="card">
+            <h2 class="eyebrow">ASSUMPTIONS & LIMITATIONS</h2>
+            <div id="decisionLimits"></div>
+          </section>
+        </div>
+      </section>
+      <footer class="workspace-footer">
+        REFERENCE ONLY · FIXED ILLUSTRATIVE DATA · NO PERSISTENCE · NO LIVE RESEARCH
+      </footer>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

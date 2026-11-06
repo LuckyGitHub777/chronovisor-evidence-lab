@@ -1,0 +1,170 @@
+{
+  "title": "Pompeii — AD 79",
+  "illustrative": true,
+  "notice": "Illustrative evidence package — not a cited archaeological record.",
+  "query": "Fixed reference sample: reconstruct a historical state from surviving evidence.",
+  "hypotheses": [
+    {
+      "id": "H1",
+      "position": "PRIMARY",
+      "label": "Primary evidence-compatible reconstruction",
+      "evidence_for": [
+        "direct archaeological geometry",
+        "multiple independent survey records"
+      ],
+      "evidence_against": [
+        "upper structures are incomplete"
+      ],
+      "would_change": "A new independent primary survey contradicting the current geometry."
+    },
+    {
+      "id": "H2",
+      "position": "ALTERNATIVE",
+      "label": "Alternative reconstruction",
+      "evidence_for": [
+        "comparable structural forms"
+      ],
+      "evidence_against": [
+        "less direct support for the surviving wall geometry"
+      ],
+      "would_change": "Primary evidence that better discriminates the upper structural form."
+    },
+    {
+      "id": "H3",
+      "position": "RESIDUAL",
+      "label": "Residual possibility",
+      "evidence_for": [
+        "compatible with unresolved details"
+      ],
+      "evidence_against": [
+        "weak direct support"
+      ],
+      "would_change": "New primary evidence that resolves currently unknown details."
+    }
+  ],
+  "elements": [
+    {
+      "id": "wall",
+      "label": "Western wall",
+      "status": "KNOWN",
+      "why": "Direct archaeological geometry and multiple independent survey records.",
+      "roots": [
+        "archaeological geometry",
+        "independent survey records"
+      ],
+      "dependencies": [],
+      "contradictions": [],
+      "alternatives": [
+        "minor geometry variation within measurement uncertainty"
+      ],
+      "missing_evidence": [
+        "complete original upper structure"
+      ],
+      "change_condition": "A high-quality independent primary survey that materially contradicts the measured geometry."
+    },
+    {
+      "id": "roof",
+      "label": "Upper roof form",
+      "status": "INFERRED",
+      "why": "Consistent with structural remains and comparable buildings; not directly preserved.",
+      "roots": [
+        "surviving structural remains",
+        "comparable building evidence"
+      ],
+      "dependencies": [
+        "comparative architectural model"
+      ],
+      "contradictions": [
+        "upper structure is not directly preserved"
+      ],
+      "alternatives": [
+        "lower roof pitch",
+        "different upper framing"
+      ],
+      "missing_evidence": [
+        "directly preserved roof geometry"
+      ],
+      "change_condition": "New structural evidence or a primary depiction that discriminates among roof forms."
+    },
+    {
+      "id": "color",
+      "label": "Surface color",
+      "status": "POSSIBLE",
+      "why": "Weak pigment evidence and analogical reconstruction.",
+      "roots": [
+        "limited pigment evidence"
+      ],
+      "dependencies": [
+        "analogical reconstruction"
+      ],
+      "contradictions": [
+        "pigment survival is incomplete"
+      ],
+      "alternatives": [
+        "different hue",
+        "unpainted or weathered surface"
+      ],
+      "missing_evidence": [
+        "well-preserved in-situ pigment sample"
+      ],
+      "change_condition": "Direct material analysis with reliable provenance."
+    },
+    {
+      "id": "conversation",
+      "label": "Exact conversation",
+      "status": "UNKNOWN",
+      "why": "No surviving evidence supports recovery of exact speech.",
+      "roots": [],
+      "dependencies": [],
+      "contradictions": [
+        "no admissible surviving record of exact speech"
+      ],
+      "alternatives": [
+        "not reconstructable from this evidence package"
+      ],
+      "missing_evidence": [
+        "contemporaneous recording or transcription with provenance"
+      ],
+      "change_condition": "Discovery of an independently authenticated contemporaneous record."
+    }
+  ],
+  "timeline": [],
+  "timeline_empty_state": "This fixed sample contains no dated event records or time intervals. No chronology is inferred from the investigation title. A production timeline requires dated or bounded events, temporal precision, source references, dependencies and conflicting-date handling.",
+  "next_best_evidence": "Acquire the highest-value independent primary record that discriminates H1 from H2.",
+  "decision": {
+    "basis": "WAIT",
+    "reason": "Additional evidence has positive decision value and preserves competing reconstructions.",
+    "notice": "Illustrative decision state only. No action is executed or authorized by this interface.",
+    "candidate_actions": [
+      {
+        "action": "WAIT",
+        "status": "favored",
+        "why": "Seek discriminatory evidence before collapsing H1 and H2."
+      },
+      {
+        "action": "ACT",
+        "status": "not justified",
+        "why": "Current evidence does not justify presenting one reconstruction as uniquely established."
+      },
+      {
+        "action": "MONITOR",
+        "status": "not applicable",
+        "why": "This fixed historical reference packet is not a live evolving hazard."
+      },
+      {
+        "action": "SAFE_STOP",
+        "status": "available",
+        "why": "Stop without promoting a stronger conclusion if no admissible new evidence exists."
+      }
+    ],
+    "assumptions": [
+      "The sample evidence statements are illustrative product-contract data, not a completed Pompeii research dossier.",
+      "No hypothesis probability or confidence value is calibrated or displayed in this sample."
+    ],
+    "limitations": [
+      "This dependency-free reference is not connected to live research data.",
+      "Evidence-root labels are illustrative; no source documents are attached.",
+      "It does not demonstrate a physical or extraordinary Chronovisor information channel."
+    ]
+  }
+}
