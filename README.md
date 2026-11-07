@@ -1,5 +1,7 @@
 # Chronovisor — Evidence Reconstruction Lab
 
+**Explore online:** [Open the Chronovisor Evidence Lab](https://luckygithub777.github.io/chronovisor-evidence-lab/). Explore evidence, uncertainty, timelines, and human judgment in the public browser experience.
+
 A dependency-free browser experience for exploring how **known, inferred, possible, and unknown** evidence affects a hypothetical reconstruction.
 
 ## Explore
